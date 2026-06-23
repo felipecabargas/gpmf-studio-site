@@ -45,3 +45,18 @@ test('findAssetByName finds a matching asset by exact name', () => {
 test('findAssetByName handles non-array input', () => {
   assert.equal(findAssetByName(undefined, 'x'), undefined);
 });
+
+test('detectPlatform exposes functions as globals for non-module script-tag use', () => {
+  assert.equal(typeof globalThis.detectPlatform, 'function');
+  assert.equal(typeof globalThis.formatBytes, 'function');
+  assert.equal(typeof globalThis.findAssetByName, 'function');
+});
+
+test('detectPlatform returns null for iOS user agents instead of misclassifying as mac', () => {
+  assert.equal(detectPlatform('Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15'), null);
+  assert.equal(detectPlatform('Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X) AppleWebKit/605.1.15'), null);
+});
+
+test('formatBytes renders terabyte-scale sizes correctly', () => {
+  assert.equal(formatBytes(1099511627776), '1.0 TB');
+});
