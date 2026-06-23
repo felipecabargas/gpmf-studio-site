@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPMF Studio — Extract GPS &amp; sensor data from your GoPro footage</title>
+  <meta name="description" content="Free desktop app for macOS, Windows, and Linux that extracts GPS and sensor telemetry from GoPro video files and exports it as GPX, KML, CSV, or JSON.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img src="favicon.svg" alt="" class="brand-icon" width="28" height="28">
+        <span>GPMF Studio</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="badge" data-version-badge>v0.1.0</span>
+        <h1>Extract GPS &amp; sensor data from your GoPro footage</h1>
+        <p class="hero-pitch">GPMF Studio reads the hidden telemetry inside your GoPro videos &mdash; GPS track, accelerometer, gyroscope &mdash; and exports it as GPX, KML, CSV, or JSON. Free to download. Runs entirely on your computer.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-hero-download data-download="mac-arm64" href="https://github.com/felipecabargas/gpmf-studio-releases/releases/latest/download/GPMF-Studio-mac-arm64.dmg">Download for macOS</a>
+          <a class="hero-secondary-link" href="#download">See all platforms ↓</a>
+        </div>
+        <p class="hero-meta">macOS · Windows · Linux &mdash; free, no account required</p>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>What it does</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>GPS map preview</h3>
+            <p>See your GoPro's GPS track on an interactive map before you export anything.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Motion sensor charts</h3>
+            <p>Plot accelerometer, gyroscope, and gravity streams to see exactly what your camera recorded.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Export to GPX, KML, CSV, or JSON</h3>
+            <p>Take your GPS track into mapping tools, or your raw sensor data into a spreadsheet or script.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Batch processing</h3>
+            <p>Point it at a folder and export every clip inside, all in one pass.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Automatic chapter merging</h3>
+            <p>GoPro splits long recordings into chapter files &mdash; GPMF Studio detects and merges them for you.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Light &amp; dark mode</h3>
+            <p>Follows your system appearance automatically.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENSHOTS: drop <img> tags into a .screenshot-gallery grid here, then remove this
+    comment block (and add a matching <section id="screenshots"> + .screenshot-gallery CSS rule).
+    <section id="screenshots" class="screenshots">
+      <div class="container">
+        <h2>See it in action</h2>
+        <div class="screenshot-gallery"></div>
+      </div>
+    </section>
+    -->
+
+    <section id="download" class="download">
+      <div class="container">
+        <h2>Download</h2>
+        <p class="download-intro">GPMF Studio is free. These builds aren't code-signed, so your OS will warn you before the first run &mdash; instructions are below each button.</p>
+        <div class="download-grid">
+
+          <article class="platform-card" data-platform-card="mac">
+            <h3>macOS</h3>
+            <div class="platform-buttons">
+              <a class="btn btn-secondary" data-download="mac-arm64" href="https://github.com/felipecabargas/gpmf-studio-releases/releases/latest/download/GPMF-Studio-mac-arm64.dmg">Apple Silicon (M1/M2/M3) <span class="file-size" data-size="mac-arm64"></span></a>
+              <a class="btn btn-secondary" data-download="mac-x64" href="https://github.com/felipecabargas/gpmf-studio-releases/releases/latest/download/GPMF-Studio-mac-x64.dmg">Intel <span class="file-size" data-size="mac-x64"></span></a>
+            </div>
+            <p class="platform-note">"GPMF Studio" is damaged and can't be opened? Right-click the app in Applications, choose <strong>Open</strong>, then confirm. You only need to do this once.</p>
+          </article>
+
+          <article class="platform-card" data-platform-card="win">
+            <h3>Windows</h3>
+            <div class="platform-buttons">
+              <a class="btn btn-secondary" data-download="win-x64" href="https://github.com/felipecabargas/gpmf-studio-releases/releases/latest/download/GPMF-Studio-win-x64.exe">Windows 64-bit <span class="file-size" data-size="win-x64"></span></a>
+            </div>
+            <p class="platform-note">Windows SmartScreen may say "Windows protected your PC." Click <strong>More info</strong>, then <strong>Run anyway</strong>.</p>
+          </article>
+
+          <article class="platform-card" data-platform-card="linux">
+            <h3>Linux</h3>
+            <div class="platform-buttons">
+              <a class="btn btn-secondary" data-download="linux-x64" href="https://github.com/felipecabargas/gpmf-studio-releases/releases/latest/download/GPMF-Studio-linux-x64.AppImage">AppImage, 64-bit <span class="file-size" data-size="linux-x64"></span></a>
+            </div>
+            <p class="platform-note">Make the file executable first: <code>chmod +x GPMF-Studio-linux-x64.AppImage</code>, then run it.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <dl>
+          <div class="faq-item">
+            <dt>Is GPMF Studio open source?</dt>
+            <dd>No. It's free to download and use, but the source code is proprietary and not publicly available. See the <a href="license.html">license</a> for details.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>Does it collect any of my data?</dt>
+            <dd>No. GPMF Studio runs entirely on your computer and never sends your videos, GPS data, or anything else over the network. There's no analytics or telemetry in the app.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>Why does my computer warn me when I open it?</dt>
+            <dd>The installers aren't code-signed or notarized, so macOS and Windows show a generic warning for unrecognized developers. See the instructions under each download button above.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>Which GoPro models are supported?</dt>
+            <dd>Any GoPro that records GPMF telemetry into its video files &mdash; HERO5 and newer, including 360-degree models.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>What can I export?</dt>
+            <dd>GPS tracks as GPX or KML, and any sensor stream (GPS, accelerometer, gyroscope, gravity, and more) as CSV or JSON.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Felipe Cabargas. <a href="license.html">License &amp; privacy</a>.</p>
+      <p><a href="mailto:apps@cabargas.com">apps@cabargas.com</a></p>
+    </div>
+  </footer>
+
+  <script src="download.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
