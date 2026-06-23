@@ -115,3 +115,8 @@ a { color: var(--color-accent-dark); }
   .header-inner { height: 56px; }
   .site-nav { gap: 14px; font-size: 14px; }
 }
+
+.legal { padding: 48px 0 80px; max-width: 720px; }
+.legal h1 { font-size: 32px; margin-bottom: 4px; }
+.legal h2 { font-size: 20px; margin-top: 32px; }
+.legal p { color: var(--color-text-muted); }
