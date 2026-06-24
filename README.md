@@ -1,7 +1,7 @@
 # gpmf-studio-site
 
 The GitHub Pages source for the GPMF Studio download site:
-https://felipecabargas.github.io/gpmf-studio-site
+https://cabargas.com/gpmf-studio-site
 
 Plain HTML/CSS/JS, no build step. Installers are built and hosted separately
 in [gpmf-studio-releases](https://github.com/felipecabargas/gpmf-studio-releases);
