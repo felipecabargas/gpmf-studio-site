@@ -18,5 +18,5 @@ Then open http://localhost:8090/index.html
 ## Tests
 
 ```bash
-node --test test/
+node --test
 ```

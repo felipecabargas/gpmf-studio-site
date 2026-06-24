@@ -1,5 +1,8 @@
 'use strict';
 
+// Order is load-bearing: iOS UAs contain "like Mac OS X" so the iOS check
+// must run before the mac check, and Android UAs contain "Linux" so the
+// linux branch must exclude it.
 function detectPlatform(userAgent) {
   if (typeof userAgent !== 'string') return null;
   const ua = userAgent.toLowerCase();
